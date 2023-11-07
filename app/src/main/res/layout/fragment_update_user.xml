@@ -4,29 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.add.addUserFragment">
+    tools:context=".ui.add.AddUserFragment">
 
-    <EditText
-        android:id="@+id/etId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:hint="Ingrese un ID..."
-        android:inputType="number"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:text="@string/text_update_user"
         android:textSize="21sp"
         android:textStyle="bold"
-        android:textColor="@color/black"
+        android:textColor="@color/teal_700"
         android:textAlignment="center"
         android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,7 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:hint="Ingrese un nombre.."
+        android:hint="Ingrese un Nombre.."
         android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -70,14 +58,15 @@
         app:layout_constraintTop_toBottomOf="@+id/etName"/>
 
     <Button
-        android:id="@+id/btnAdd"
+        android:id="@+id/btnUpdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Agregar"
-        android:backgroundTint="@color/black"
+        android:text="update"
+        android:backgroundTint="@color/teal_700"
         android:layout_marginTop="32dp"
         app:layout_constraintTop_toBottomOf="@+id/etLastName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

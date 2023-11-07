@@ -4,47 +4,56 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="24dp"
+    android:id="@+id/rowLayoutListFrag">
+
 
     <TextView
-        android:id="@+id/tvIdUser"
+        android:id="@+id/tvId"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_margin="16dp"
         tools:text="1"
-        android:textSize="120sp"
+        android:textStyle="bold"
+        android:textSize="100sp"
         android:textAlignment="center"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
-
-    <TextView
-        android:id="@+id/tvTitleUser"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        tools:text="Title"
-        android:textSize="42sp"
-        android:textAlignment="center"
-        android:layout_margin="16dp"
-        app:layout_constraintStart_toEndOf="@id/tvIdUser"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
-    <TextView
-        android:id="@+id/tvSubTitleUser"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        tools:text="Title"
-        android:textSize="28sp"
-        android:textAlignment="center"
-        android:layout_margin="16dp"
-        app:layout_constraintStart_toEndOf="@id/tvIdUser"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvTitleUser" />
 
-    <com.google.android.material.divider.MaterialDivider
-        android:layout_width="match_parent"
-        android:layout_height="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"/>
-    
+    <TextView
+        android:id="@+id/tvFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Fideo"
+        android:layout_marginStart="26dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvId"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/tvLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text=" Di María"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvFirstName"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        tools:text="(26)"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvLastName"
+        app:layout_constraintTop_toTopOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

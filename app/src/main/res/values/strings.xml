@@ -2,4 +2,6 @@
     <string name="app_name">TPSeminario</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_add_user">Agrega un usuario!</string>
+    <string name="text_update_user">Edita un usuario!</string>
 </resources>
