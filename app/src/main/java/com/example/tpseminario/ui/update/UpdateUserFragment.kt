@@ -16,6 +16,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.navigation.fragment.findNavController
 import com.example.tpseminario.R
+import com.example.tpseminario.databinding.FragmentUpdateUserBinding
 import com.example.tpseminario.model.User
 import com.example.tpseminario.viewmodel.UserViewModel
 
